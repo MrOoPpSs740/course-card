@@ -1,0 +1,151 @@
+/* body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+} */
+
+/* Your existing styles */
+
+.cart {
+  position: relative;
+}
+
+.cart .cart-count {
+ 
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.cart.has-items .cart-count {
+  display: block;
+}
+
+.cart .bi-cart::before {
+  font-size: 24px;
+}
+
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 50px;
+ 
+}
+
+.course-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  background-color: white;
+  transition: transform 0.2s ease-in-out;
+  height: 380px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.course-details {
+  padding: 16px;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.course-description {
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+  color: #555;
+}
+
+.course-price {
+  font-weight: bold;
+  color: rgb(255, 196, 0);
+}
+
+.course-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.add-to-cart,
+.buy-now {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(0, 167, 245);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.add-to-cart:hover,
+.buy-now:hover {
+  background-color: #1f7af1;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .course-container.navbar{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .course-card {
+      width: 90%;
+  }
+}
+/* /* @media screen and (orientation: landscape) {
+  .course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .course-card {
+    width: 100%;
+  }
+  
+  .course-details {
+    padding: 10px;
+  }
+  
+  .course-image {
+    height: 180px;
+  }
+} 
+
+
+
+
+
+
+
+
+ 
